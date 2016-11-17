@@ -13,6 +13,11 @@ body {
   background: #418fff;
   color: white;
 }
+#sidebar {
+  width: 300px;
+  height: 400px;
+  background: #800000;
+}
 </style
 
 </head>
