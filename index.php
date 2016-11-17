@@ -16,7 +16,12 @@ body {
 #sidebar {
   width: 300px;
   height: 400px;
+  float: left;
   background: #800000;
+}
+#data {
+  height: 700px;
+  background: #FF0000;
 }
 </style
 
@@ -26,6 +31,9 @@ body {
   
 </div>
 <div id="sidebar">
+
+</div>
+<div id="data">
 
 </div>
 </body>
