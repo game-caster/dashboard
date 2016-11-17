@@ -22,6 +22,11 @@ body {
 
 </head>
 <body>
+<div id="header">
+  
+</div>
+<div id="sidebar">
 
+</div>
 </body>
 </html>
