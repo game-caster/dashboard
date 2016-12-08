@@ -1,2 +1,2 @@
-# Dashboard
-Just for fun...
+# GameCaster
+A mockup website.
