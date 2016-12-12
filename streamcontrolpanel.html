@@ -192,21 +192,26 @@ Broadcast Control Panel
 <div class='col_left'>Stream Title</div>
 <div class='col_right' id='site_title_col'><strong>Test</strong><a class='button blue_button' target="_blank" id="edit_site_title">Edit Stream Title</a></div>
 <div class='clear'></div>
+<div class='col_left'>Video Source</div>
+<div class='col_right'><strong>teststream.co</strong></div>
 <div class='clear'></div>
-</div>
+<div class='col_left'>Audio Source</div>
+<div class='col_right'>
 
-<div class='col_left'>Audio Input</div>
-<div class='col_right'><input type="range" min="0" max="100" value="50" step="5" onchange="showValue(this.value)" />
-<span id="range">0</span>
+<input type="range" min="0" max="100" value="50" step="5" onchange="showValue(this.value)" />
+<span id="range">50</span>
 <script type="text/javascript">
 function showValue(newValue)
 {
-	document.getElementById("range").innerHTML=newValue;
+    document.getElementById("range").innerHTML=newValue;
 }
 </script>
-<div class='clear'></div>
+
+</div>
 <div class='clear'></div>
 </div>
+<div class='input_wrapper'>
+<div class='clear'></div>
 </div>
 <div class='input_wrapper save_button'>
 <div class='button blue_button'>Save Settings</div>
@@ -215,6 +220,7 @@ function showValue(newValue)
 </div>
 </div>
 </form>
+
 
 </div>
 </div><!-- end span 12 -->
