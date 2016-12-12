@@ -1479,13 +1479,10 @@ SITE TITLE
 <div id="site_title_message">
 <h2>{{# link_prompt }}Before you share this link, we recommend you set a title for your site&#x2a;{{/ link_prompt }}
 {{^ link_prompt }}
-{{# site_title }}Edit your site's title&#x2a;{{/ site_title }}
-{{^ site_title }}Enter a catchy title for your site&#x2a;{{/ site_title }}
+{{# site_title }}Edit your stream title&#x2a;{{/ site_title }}
 {{/ link_prompt }}
 </h2>
 <textarea id="site_title_text" cols="100" rows="2" maxlength="50" placeholder="Enter your title here">{{ site_title }}</textarea>
-<h3>e.g. NYTimes.com would have the title "New York Times"</h2>
-<h4>&#x2a;Note: Your site title will be included in the title of all the content you share</h3>
 <div id="site_title_error_wrapper" style="display:none">
 <span id="site_title_error_msg">ERROR!</span>
 </div>
