@@ -205,6 +205,16 @@ Broadcast Control Panel
 <div class='clear'></div>
 <div class='col_left'>Audio Source</div>
 <div class='col_right'>
+<form method="post">
+    <select name="Source">
+    <option value="screen">Internal Microphone</option>
+    <option value="window">External Microphone</option>
+</select>
+</form>
+</div>
+<div class='clear'></div>
+<div class='col_left'>Audio Volume</div>
+<div class='col_right'>
 
 <input type="range" min="0" max="100" value="50" step="5" onchange="showValue(this.value)" />
 <span id="range">50</span>
