@@ -1,0 +1,80 @@
+<html>
+<head>
+<style type="text/css">
+@font-face { font-family: PoiretOne; src: url('PoiretOne-Regular.ttf'); }
+siteName { font-family: PoiretOne }
+@font-face { font-family: MontserratBold; src: url('Montserrat-Bold.ttf'); }
+h3 { font-family: MontserratBold }
+@font-face { font-family: Montserrat; src: url('Montserrat.ttf'); }
+message { font-family: Montserrat }
+</style>
+
+<title>opum2</title>
+
+<meta name = "twitter:card" content = "summary" />
+<meta name = "twitter:site" content = "http://opum2.github.io/dashboard/sites/opum2" />
+<meta name = "twitter:title" content = "opum2 - GameCaster" />
+<meta name = "twitter:description" content = "Watch @opum2 on GameCaster"  />
+<meta name = "twitter:image" content = "https://avatars1.githubusercontent.com/u/16782191?v=3&s=466" /> 
+  
+<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+
+<!--<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />!-->
+
+<script type="text/javascript">
+
+function enter() {
+
+    if (navigator.mozGetUserMedia) { 
+       navigator.myGetMedia=navigator.mozGetUserMedia;
+       navigator.myGetMedia({video: true}, connect, error); 
+    } 
+    else {
+       alert("NO");
+    }
+
+    function connect(stream) {
+
+        var video = document.getElementById("streamInput");
+            video.src = window.URL ? window.URL.createObjectURL(stream) : stream;
+            video.play();
+
+        var canvas = document.getElementById("c"); 
+    }
+
+    function error(e) { console.log(e); }
+
+}
+
+</script>
+
+</head>
+<body>
+<div id="header_outer">
+<div id="logo_outer"><div id="logo_inner" class="row ">
+<a id="logo" href="/dashboard/sites/template.html"><img class="logo_img" src="/dashboard/sites/sulu_logo.png" /><siteName>opum2<siteName></a>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+<message>
+<object classid="CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+            height="285" id="mediaPlayer" standby="Loading Video Player..."
+            type="application/x-oleobject" width="360" style="margin-bottom:30px;">
+            <param name="fileName" value="streamInput" />
+            <param name="animationatStart" value="true" />
+            <param name="transparentatStart" value="true" />
+            <param name="autoStart" value="true" />
+            <param name="showControls" value="true" />
+            <param name="loop" value="true" />
+            <embed autosize="-1" autostart="true" bgcolor="darkblue" designtimesp="5311" displaysize="4"
+                height="285" id="mediaPlayer" loop="true" name="mediaPlayer" pluginspage="http://microsoft.com/windows/mediaplayer/en/download/"
+                showcontrols="true" showdisplay="0" showstatusbar="-1" showtracker="-1" src="streamInput"
+                type="application/x-mplayer2" videoborder3d="-1" width="360"></embed>
+</object>
+</message>
+</div>
+</body>
+</html>
