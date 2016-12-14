@@ -22,6 +22,41 @@
     width: 95px;
     height: 40px;
 }
+input2[type="text"],textarea select {
+    outline: 0;
+    font: normal 1300%;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: #fefefe;
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+    border: 2px solid #b2b1ae;
+    font-size: 19px;
+    color: #111;
+    letter-spacing: .08em
+}
+input2[type="text"]:focus,input[type="text"]:hover,textarea:focus,textarea:hover {
+    -moz-box-shadow: rgba(0, 0, 0, .2) 0 0 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, .2) 0 0 4px;
+    box-shadow: rgba(0, 0, 0, .2) 0 0 4px;
+    background: #F9F9F9;
+    background: -webkit-gradient(linear, left top, left 25, from(#f9f9f9), color-stop(4%, #eee), to(#f9f9f9));
+    background: -moz-linear-gradient(top, #f9f9f9, #eee 1px, #f9f9f9 25px)
+}
+
+input2[type="text"]:hover,textarea:hover {
+    border-color: #bbb
+}
+
+input2[type="text"]:focus,textarea:focus {
+    border-color: #4c97c8;
+    background: #fff
+}
 </style>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -190,7 +225,7 @@ Broadcast Control Panel
 </div>
 <div class='clear'></div>
 <div class='col_left'>Stream Title</div>
-<div class='col_right' id='site_title_col'><input type="text" name="streamTitle"></div>
+<div class='col_right' id='site_title_col'><input2 type="text" name="streamTitle"></div>
 <div class='clear'></div>
 <div class='col_left'>Video Source</div>
 <div class='col_right'>
