@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <title>MyLikes</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="google" value="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+
+            <meta property="og:url" content="https://mylikes.com" />
+            <meta name="twitter:url" content="https://mylikes.com" />
+            <meta property="og:title" content="MyLikes - The Best Post Scheduler on the Web" />
+            <meta name="twitter:title" content="MyLikes - The Best Post Scheduler on the Web" />
+            <meta property="og:image" content="https://mylikes.com/images/page_manager/mylikes/pm_og.png" />
+            <meta name="twitter:image" content="https://mylikes.com/images/page_manager/mylikes/pm_og.png" />
+            <meta property="og:description" content="MyLikes is the ideal post scheduling product for enterprise and consumer use. It&#39;s packed with intelligent features and highly polished. Social Media managers love it." />
+            <meta name="twitter:description" content="MyLikes is the ideal post scheduling product for enterprise and consumer use. It&#39;s packed with intelligent features and highly polished. Social Media managers love it." />
+
+    <link rel="stylesheet" href="/css/jquery-ui-sortable.min.css" />
+    <link rel="stylesheet" href="/css/animations.css" />     <link rel="stylesheet" href="/css/countrySelect.min.css" />
+    <link rel="stylesheet" href="/css/jqcloud.min.css" />
+
+    <link type="text/css" rel="stylesheet" href="/s/1465b7120286cef88d1792dff4e4a60a/reacthome.css" />
+
+    <script src="https://use.fontawesome.com/16b7bf653c.js" async></script>
+
+    <script src="/s/2455eccd0c8db6ea7228343555f71847/reacthome.js" type="text/javascript"></script>
+
+    <script>
+    error_handling_broken = false;
+    in_error_handler = false;
+    window.onerror = function(m, u, l) {
+        if ((u == null || u.length == 0) && l == 0 && m == 'Script error.') return false;
+        if (error_handling_broken) return false;
+        if (in_error_handler) {
+            error_handling_broken = true;
+            return false;
+        }
+        in_error_handler = true;
+        if (window.jQuery) {
+            jQuery.post('/api/track_error', {message: m, url: u, line: l}).error(function() {error_handling_broken = true;});
+        }
+        in_error_handler = false;
+        return false;
+    };
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css' />
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 711743168981887,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <script>window.pi_config = {"show_calendar": 1, "show_homepage_testimonial": 0, "show_add_account_button": 0, "per_page_queue": 20, "allow_edit_post": 1, "show_user_schedule": 1, "show_post_score": 0, "show_duration_button": 0, "show_twitter_login_button": 0, "show_sidebar_home_sponsored": 1, "branded_show_host": 1, "show_payments": 0, "allow_hide_suggestion": 0, "allow_hide_branded_content": 0, "branded_show_cpc": 0, "show_reschedule_button": 1, "page_group_name_max_len": 25, "show_analytics_insights": 0, "show_all_accounts_selector": 0, "global_message_type": "", "account_selector_search": 0, "use_react": 1, "show_insights_tab_eng": 0, "show_user_password_login": 0, "show_insights_tab_sentiment": 1, "post_score_tick_count": 10, "show_sponsored": 1, "global_message": "", "per_page_recent": 20, "show_suggested_time": 0, "show_user_suggestions_loggedin_tab": 0, "show_insights_tab_cloud": 1, "show_pinterest_login_button": 0, "random_post_offset_minutes": 5, "min_onboarding_tags": 2, "show_user_schedule_settings": 0, "show_insights_tab_network": 0, "show_export_csv": 0, "show_tags_settings": 0, "show_email_settings": 1, "show_insights_tab_posting": 1, "show_media_creator": 1, "constants": {"admin_level": 0, "domain": "mylikes.com", "user_type": "mylikes", "alt_domain": "publisher.mylikes.com", "is_admin": true, "alt_domain_old": "old.publisher.mylikes.com", "product_name": "MyLikes", "branding_folder": "mylikes"}, "show_analytics_tab": 1, "use_loading_screen": 1, "tw_widget_js_url": "https://platform.twitter.com/widgets.js", "campaign_big_buttons": 1, "show_hr_settings": 0, "force_family_safe": 0, "show_facebook_login_button": 1, "show_linkedin_login_button": 0, "show_insights_tab_friends": 0, "allow_create_article": 1, "schedule_now": 1, "allow_images_and_video_gallery": 0, "branded_show_filters": 0, "link_trending_topics": 1, "show_settings_manage_groups": 0};</script>
+  </head>
+  <body style="" id="useReact">
+    <div id="container"></div>
+    <script src="/dist/main.554b6503132316740e43.js"></script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};
+      if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);
+      t._e = [];t.ready = function(f){t._e.push(f);};
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+  </body>
+</html>
